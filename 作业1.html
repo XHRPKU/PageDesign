@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>谷歌搜索简易化窗口</title>
+		<style>
+			/*定义整体背景*/
+			body{
+				background-color:#87CEFA;
+				font-family:Arial, sans-serif;
+				background-image:url("背景图2.jpg");
+				background-size:cover
+				}
+			/*定义搜索框背景*/
+			form {
+				margin: 200px auto;
+				max-width: 800px;
+				background-color: rgba(70,130,180,0.5);
+				padding: 50px;
+				border-radius: 20px;
+				box-shadow: 10px 15px 4px rgba(0,0,0,.5);
+				}
+				
+			/*定义搜索框*/
+			input[type="text"] {
+				display:inline-block;
+				vertical-align:middle;
+				width: 600px;
+				padding: 10px;
+				border-radius: 20px;
+				border: none;
+				box-shadow: 0 2px 4px rgba(0,0,0,.5);
+				font-size: 18px;
+			  }
+			
+			/*定义检索按钮*/
+			input[type="submit"] {
+				display:inline-block;
+				vertical-align:middle;
+				background-color: #4CAF50;
+				color: #fff;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 5px;
+				font-size: 18px;
+				cursor: pointer;
+			  }
+			
+			/*定义欢迎语*/
+			.prompt{
+				position:absolute;
+				top:180px;
+				left:700px;
+				transform:translateX(-50%);
+				font-size:30px;
+				font-weight:normal;
+				color:#fff;
+				font-family:"华文行楷",sans-serif
+			}
+		</style>
+				
+	</head>
+	<body>
+		
+		<div class="search-box">
+			<form action="http://www.google.com.hk/search" method="get">
+				<input type="text" name="q">
+				<input type="submit" value="谷歌搜索">
+				<p class="prompt">欢迎使用谷歌搜索(＾◡＾)</p>
+			</form>
+		</div>
+	</body>
+</html>
+	

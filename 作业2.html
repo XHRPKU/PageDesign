@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>红楼梦</title>
+	<style>
+		body {
+			background-image: url('背景.jpg');
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		#title {
+			position: absolute;
+			top: 5%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 30px;
+			font-family: "华文新魏", sans-serif;
+			color: #DC143C;
+			font-weight: normal;
+			}
+		 #description {
+			width: 400px;
+			word-wrap: break-word;
+			word-break: break-all;
+			position: absolute;
+			top: 15%;
+			left: 16%;
+			transform: translate(-50%, -50%);
+			line-height:1.5;
+			text-align: left;
+			font-size: 15px;
+			font-family: "微软雅黑", sans-serif;
+			color: #333;
+		  }
+		#description h1 {
+			position: absolute;
+			top: -8%;
+			left: 12%;
+			transform: translate(-50%, -50%);
+			text-align: left;
+			font-size: 20px;
+			font-weight:bold
+			font-family: "微软雅黑", sans-serif;
+			color: #FFD700;
+		}
+		
+	</style>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="title">红楼梦主要人物关系图</div>
+	<div id="description">
+		<h1>文字说明</h1>
+		<p>《红楼梦》是我国的四大名著之一，以中国语言文学类专业为主的学者对红楼梦做了
+		大量的研究。二十世纪以来，《红楼梦》更以其丰富深刻的思想底蕴和异常出色的艺术
+		成就使学术界产生了以其为研究对象的专门学问—红学。而对红学的研究方法也随着方法
+		论的革新而革新。在本页面中，笔者选取了《红楼梦》中重要的人物统计他们在文中出现
+		和两两共线的次数。通过阅读读者可以大致了解到不同角色在《红楼梦》中的地位，以及
+		角色之间的关系。</p>
+	</div>
+    <div id="2a633be0e3c14b7988ed54f6249025b1" class="chart-container" style="width:1350px; height:800px; "></div>
+    <script>
+        var chart_2a633be0e3c14b7988ed54f6249025b1 = echarts.init(
+            document.getElementById('2a633be0e3c14b7988ed54f6249025b1'), '', {renderer: 'canvas'});
+        var option_2a633be0e3c14b7988ed54f6249025b1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "graph",
+            "layout": "circular",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 1000,
+                "gravity": 0.2,
+                "edgeLength": [
+                    10,
+                    50
+                ],
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "\u8d3e\u5b9d\u7389",
+                    "fixed": false,
+                    "value": 3574,
+                    "symbolSize": 71.48
+                },
+                {
+                    "name": "\u8d3e\u6bcd",
+                    "fixed": false,
+                    "value": 2171,
+                    "symbolSize": 43.42
+                },
+                {
+                    "name": "\u738b\u7199\u51e4",
+                    "fixed": false,
+                    "value": 1606,
+                    "symbolSize": 32.12
+                },
+                {
+                    "name": "\u6797\u9edb\u7389",
+                    "fixed": false,
+                    "value": 1056,
+                    "symbolSize": 21.12
+                },
+                {
+                    "name": "\u88ad\u4eba",
+                    "fixed": false,
+                    "value": 993,
+                    "symbolSize": 19.86
+                },
+                {
+                    "name": "\u738b\u592b\u4eba",
+                    "fixed": false,
+                    "value": 958,
+                    "symbolSize": 19.16
+                },
+                {
+                    "name": "\u859b\u5b9d\u9497",
+                    "fixed": false,
+                    "value": 738,
+                    "symbolSize": 14.76
+                },
+                {
+                    "name": "\u8d3e\u740f",
+                    "fixed": false,
+                    "value": 688,
+                    "symbolSize": 13.76
+                },
+                {
+                    "name": "\u5e73\u513f",
+                    "fixed": false,
+                    "value": 590,
+                    "symbolSize": 11.8
+                },
+                {
+                    "name": "\u8d3e\u653f",
+                    "fixed": false,
+                    "value": 468,
+                    "symbolSize": 9.36
+                },
+                {
+                    "name": "\u63a2\u6625",
+                    "fixed": false,
+                    "value": 428,
+                    "symbolSize": 8.56
+                },
+                {
+                    "name": "\u9e33\u9e2f",
+                    "fixed": false,
+                    "value": 421,
+                    "symbolSize": 8.42
+                },
+                {
+                    "name": "\u7d2b\u9e43",
+                    "fixed": false,
+                    "value": 416,
+                    "symbolSize": 8.32
+                },
+                {
+                    "name": "\u6674\u96ef",
+                    "fixed": false,
+                    "value": 305,
+                    "symbolSize": 6.1
+                },
+                {
+                    "name": "\u6797\u7ea2\u7389",
+                    "fixed": false,
+                    "value": 285,
+                    "symbolSize": 5.7
+                },
+                {
+                    "name": "\u9e9d\u6708",
+                    "fixed": false,
+                    "value": 226,
+                    "symbolSize": 4.52
+                },
+                {
+                    "name": "\u5468\u745e",
+                    "fixed": false,
+                    "value": 208,
+                    "symbolSize": 4.16
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "\u9e33\u9e2f",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 886
+                },
+                {
+                    "source": "\u9e33\u9e2f",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 2580
+                },
+                {
+                    "source": "\u9e33\u9e2f",
+                    "target": "\u738b\u7199\u51e4",
+                    "value": 1185
+                },
+                {
+                    "source": "\u8d3e\u653f",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 1173
+                },
+                {
+                    "source": "\u8d3e\u653f",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 907
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u8d3e\u653f",
+                    "value": 1173
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u738b\u592b\u4eba",
+                    "value": 2923
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 5854
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u6797\u9edb\u7389",
+                    "value": 3877
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u63a2\u6625",
+                    "value": 1149
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u6797\u7ea2\u7389",
+                    "value": 843
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u88ad\u4eba",
+                    "value": 5836
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u859b\u5b9d\u9497",
+                    "value": 2271
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u6674\u96ef",
+                    "value": 2089
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u9e9d\u6708",
+                    "value": 1423
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u738b\u7199\u51e4",
+                    "value": 1957
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u7d2b\u9e43",
+                    "value": 1330
+                },
+                {
+                    "source": "\u8d3e\u5b9d\u7389",
+                    "target": "\u9e33\u9e2f",
+                    "value": 886
+                },
+                {
+                    "source": "\u63a2\u6625",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 1149
+                },
+                {
+                    "source": "\u8d3e\u740f",
+                    "target": "\u738b\u7199\u51e4",
+                    "value": 1370
+                },
+                {
+                    "source": "\u8d3e\u740f",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 1176
+                },
+                {
+                    "source": "\u6797\u9edb\u7389",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 1649
+                },
+                {
+                    "source": "\u6797\u9edb\u7389",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 3877
+                },
+                {
+                    "source": "\u6797\u9edb\u7389",
+                    "target": "\u859b\u5b9d\u9497",
+                    "value": 970
+                },
+                {
+                    "source": "\u6797\u9edb\u7389",
+                    "target": "\u7d2b\u9e43",
+                    "value": 1716
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u6797\u9edb\u7389",
+                    "value": 1649
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u8d3e\u740f",
+                    "value": 1176
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u738b\u7199\u51e4",
+                    "value": 3787
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u90a2\u592b\u4eba",
+                    "value": 932
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u738b\u592b\u4eba",
+                    "value": 2556
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 5854
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u88ad\u4eba",
+                    "value": 1354
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u859b\u59e8\u5988",
+                    "value": 1296
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u8d3e\u653f",
+                    "value": 907
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u859b\u5b9d\u9497",
+                    "value": 1207
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u674e\u7ea8",
+                    "value": 822
+                },
+                {
+                    "source": "\u8d3e\u6bcd",
+                    "target": "\u9e33\u9e2f",
+                    "value": 2580
+                },
+                {
+                    "source": "\u738b\u7199\u51e4",
+                    "target": "\u8d3e\u740f",
+                    "value": 1370
+                },
+                {
+                    "source": "\u738b\u7199\u51e4",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 3787
+                },
+                {
+                    "source": "\u738b\u7199\u51e4",
+                    "target": "\u738b\u592b\u4eba",
+                    "value": 1482
+                },
+                {
+                    "source": "\u738b\u7199\u51e4",
+                    "target": "\u5e73\u513f",
+                    "value": 1765
+                },
+                {
+                    "source": "\u738b\u7199\u51e4",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 1957
+                },
+                {
+                    "source": "\u738b\u7199\u51e4",
+                    "target": "\u9e33\u9e2f",
+                    "value": 1185
+                },
+                {
+                    "source": "\u738b\u592b\u4eba",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 2556
+                },
+                {
+                    "source": "\u738b\u592b\u4eba",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 2923
+                },
+                {
+                    "source": "\u738b\u592b\u4eba",
+                    "target": "\u738b\u7199\u51e4",
+                    "value": 1482
+                },
+                {
+                    "source": "\u738b\u592b\u4eba",
+                    "target": "\u88ad\u4eba",
+                    "value": 958
+                },
+                {
+                    "source": "\u90a2\u592b\u4eba",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 932
+                },
+                {
+                    "source": "\u6797\u7ea2\u7389",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 843
+                },
+                {
+                    "source": "\u88ad\u4eba",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 1354
+                },
+                {
+                    "source": "\u88ad\u4eba",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 5836
+                },
+                {
+                    "source": "\u88ad\u4eba",
+                    "target": "\u738b\u592b\u4eba",
+                    "value": 958
+                },
+                {
+                    "source": "\u674e\u7ea8",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 822
+                },
+                {
+                    "source": "\u859b\u59e8\u5988",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 1296
+                },
+                {
+                    "source": "\u859b\u5b9d\u9497",
+                    "target": "\u8d3e\u6bcd",
+                    "value": 1207
+                },
+                {
+                    "source": "\u859b\u5b9d\u9497",
+                    "target": "\u6797\u9edb\u7389",
+                    "value": 970
+                },
+                {
+                    "source": "\u859b\u5b9d\u9497",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 2271
+                },
+                {
+                    "source": "\u6674\u96ef",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 2089
+                },
+                {
+                    "source": "\u9e9d\u6708",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 1423
+                },
+                {
+                    "source": "\u5e73\u513f",
+                    "target": "\u738b\u7199\u51e4",
+                    "value": 1765
+                },
+                {
+                    "source": "\u7d2b\u9e43",
+                    "target": "\u6797\u9edb\u7389",
+                    "value": 1716
+                },
+                {
+                    "source": "\u7d2b\u9e43",
+                    "target": "\u8d3e\u5b9d\u7389",
+                    "value": 1330
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_2a633be0e3c14b7988ed54f6249025b1.setOption(option_2a633be0e3c14b7988ed54f6249025b1);
+    </script>
+</body>
+</html>
